@@ -15,6 +15,12 @@ app.use(cookieParser());
 
 app.use("/api/v1", routes);
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "Welcome to the NetBit API",
+  });
+});
+
 const port = process.env.PORT || 5000;
 
 const server = http.createServer(app);
