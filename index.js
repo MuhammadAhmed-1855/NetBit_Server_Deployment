@@ -15,6 +15,7 @@ app.use(cookieParser());
 
 app.use("/api/v1", routes);
 
+// Welcome route
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Welcome to the NetBit API",
