@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
   });
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 80;
 
 const server = http.createServer(app);
 
