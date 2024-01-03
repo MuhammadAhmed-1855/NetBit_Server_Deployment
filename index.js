@@ -18,7 +18,7 @@ app.use("/api/v1", routes);
 // Welcome route
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "Welcome to the NetBit API",
+    message: "Welcome to the NetBit API Version 2.0",
   });
 });
 
